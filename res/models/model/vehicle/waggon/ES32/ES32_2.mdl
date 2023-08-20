@@ -1,0 +1,1298 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 12.1614, 1.5268864631653, 5.8990144729614, },
+		bbMin = { -11.7698, -1.5268895626068, -0.058152914047241, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 11.078825950623, 1.526888012886, 2.9785838127136, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", },
+						mesh = "vehicle/waggon/ES32/rumpf_lod0.msh",
+						name = "rumpf_lod0",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+				        children = {
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/drehgestell_2_lod0.msh",
+						        name = "drehgestell_1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5, 0, 0.48455983400345, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5, 0, 0.48455983400345, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.2176, 0, 0, 1, },
+                    },
+                    {
+				        children = {
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/drehgestell_2_lod0.msh",
+						        name = "drehgestell_2",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5, 0, 0.48455983400345, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/rad_lod0.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5, 0, 0.48455983400345, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2176, 0, 0, 1, },
+                    },
+					{
+						materials = { "vehicle/waggon/ES32/innen.mtl", },
+						mesh = "vehicle/waggon/ES32/innen_lod0.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/ES32/fenster.mtl", },
+						mesh = "vehicle/waggon/ES32/scheiben_lod0.msh",
+						name = "scheiben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+                                params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2r_lod0.msh",
+						name = "tur_2_rechts",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.10, -1.4649896621704, 2.1130237579346, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+                                params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2l_lod0.msh",
+						name = "tur_2_links",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.10, 1.4649908542633, 2.1130237579346, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+                                params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2l_lod0.msh",
+						name = "tur_3_links",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.64269, -1.4649933576584, 2.1130237579346, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+                                params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2r_lod0.msh",
+						name = "tur_3_rechts",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.65269, 1.4649871587753, 2.1130237579346, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2l_lod0.msh",
+						name = "tur_3_links",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.91131, -1.4649871587753, 2.1130237579346, 1, },
+					},
+					{
+    					materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer1l_lod0.msh",
+						name = "tur_3_rechts",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.91131, 1.4649933576584, 2.1130237579346, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/ET31/licht_weiss_drg_lod0.msh",
+						name = "licht_weiss",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -0.7, 0, 0, 1, },
+					},
+                    {
+					    materials = { "vehicle/waggon/zugschluss.mtl", },
+					    mesh = "vehicle/waggon/zugschluss/zugschluss_de_front.msh",
+                        name = "zugschluss_de_front",
+					    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.994, -1.21489, 3.07, 1, },
+				    },
+                    {
+					    materials = { "vehicle/waggon/zugschluss.mtl", },
+					    mesh = "vehicle/waggon/zugschluss/zugschluss_de_front.msh",
+                        name = "zugschluss_de_front",
+					    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.994, 1.21489, 3.07, 1, },
+				    },
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 150,
+		},
+        {
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", },
+						mesh = "vehicle/waggon/ES32/rumpf_lod1.msh",
+						name = "rumpf_lod1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+				        children = {
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/drehgestell_2_lod1.msh",
+						        name = "drehgestell_1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5, 0, 0.48455983400345, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5, 0, 0.48455983400345, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.2176, 0, 0, 1, },
+                    },
+                    {
+				        children = {
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/drehgestell_2_lod1.msh",
+						        name = "drehgestell_2",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5, 0, 0.48455983400345, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/rad_lod1.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5, 0, 0.48455983400345, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2176, 0, 0, 1, },
+                    },
+					{
+						materials = { "vehicle/waggon/ES32/innen.mtl", },
+						mesh = "vehicle/waggon/ES32/innen_lod1.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/ES32/fenster.mtl", },
+						mesh = "vehicle/waggon/ES32/scheiben_lod0.msh",
+						name = "scheiben",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+                                params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2r_lod1.msh",
+						name = "tur_2_rechts",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.10, -1.4649896621704, 2.1130237579346, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+                                params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2l_lod1.msh",
+						name = "tur_2_links",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.10, 1.4649908542633, 2.1130237579346, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+                                params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2l_lod1.msh",
+						name = "tur_3_links",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.64269, -1.4649933576584, 2.1130237579346, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+                                params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2r_lod1.msh",
+						name = "tur_3_rechts",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.65269, 1.4649871587753, 2.1130237579346, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2l_lod1.msh",
+						name = "tur_3_links",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.91131, -1.4649871587753, 2.1130237579346, 1, },
+					},
+					{
+    					materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer1l_lod1.msh",
+						name = "tur_3_rechts",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.91131, 1.4649933576584, 2.1130237579346, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/ET31/licht_weiss_drg_lod0.msh",
+						name = "licht_weiss",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -0.7, 0, 0, 1, },
+					},
+                    {
+					    materials = { "vehicle/waggon/zugschluss.mtl", },
+					    mesh = "vehicle/waggon/zugschluss/zugschluss_de_front.msh",
+                        name = "zugschluss_de_front",
+					    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.994, -1.21489, 3.07, 1, },
+				    },
+                    {
+					    materials = { "vehicle/waggon/zugschluss.mtl", },
+					    mesh = "vehicle/waggon/zugschluss/zugschluss_de_front.msh",
+                        name = "zugschluss_de_front",
+					    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10.994, 1.21489, 3.07, 1, },
+				    },
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 150,
+			visibleTo = 350,
+		},
+        {
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", },
+						mesh = "vehicle/waggon/ES32/rumpf_lod2.msh",
+						name = "rumpf_lod2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+				        children = {
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/drehgestell_2_lod2.msh",
+						        name = "drehgestell_1",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5, 0, 0.48455983400345, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5, 0, 0.48455983400345, 1, },
+					        },
+                        },
+				        name = "bogie1",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.2176, 0, 0, 1, },
+                    },
+                    {
+				        children = {
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/drehgestell_2_lod2.msh",
+						        name = "drehgestell_2",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5, 0, 0.48455983400345, 1, },
+					        },
+					        {
+						        materials = { "vehicle/train/ET31/beweglich.mtl", },
+						        mesh = "vehicle/train/ET31/rad_lod2.msh",
+						        name = "rad",
+						        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5, 0, 0.48455983400345, 1, },
+					        },
+                        },
+				        name = "bogie2",
+				        transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2176, 0, 0, 1, },
+                    },
+					{
+						animations = {
+							close_all_doors = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+                                params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2r_lod2.msh",
+						name = "tur_2_rechts",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.10, -1.4649896621704, 2.1130237579346, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+                                params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2l_lod2.msh",
+						name = "tur_2_links",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.10, 1.4649908542633, 2.1130237579346, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_right = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+                                params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2l_lod2.msh",
+						name = "tur_3_links",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.64269, -1.4649933576584, 2.1130237579346, 1, },
+					},
+					{
+						animations = {
+							close_all_doors = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_doors_left = {
+								forward = false,
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_all_doors = {
+                                params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/train/ET31/door1.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2r_lod2.msh",
+						name = "tur_3_rechts",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.65269, 1.4649871587753, 2.1130237579346, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer2l_lod2.msh",
+						name = "tur_3_links",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9.91131, -1.4649871587753, 2.1130237579346, 1, },
+					},
+					{
+    					materials = { "vehicle/waggon/ES32/rumpf_2.mtl", "vehicle/train/ET31/fenster_drg.mtl", },
+						mesh = "vehicle/train/ET31/tueren/tuer1l_lod2.msh",
+						name = "tur_3_rechts",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.91131, 1.4649933576584, 2.1130237579346, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 350,
+			visibleTo = 1500,
+		},
+	},
+	metadata = {
+        labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					childId = "RootNode",
+					color = { 0, 0, 0, 1, },
+					fitting = "SCALE",
+					size = { 0.62, 0.1, },
+					transf = { -1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, -8.62, 1.491, 1.56, 1, },
+					type = "LINE_NAME",
+				},
+                {
+					alignment = "CENTER",
+					childId = "RootNode",
+					color = { 0, 0, 0, 1, },
+					fitting = "SCALE",
+					size = { 0.62, 0.1, },
+					transf = { -1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, -8.62, 1.491, 1.39, 1, },
+					type = "NEXT_STOP",
+				},
+                {
+					alignment = "CENTER",
+					childId = "RootNode",
+					color = { 0, 0, 0, 1, },
+					fitting = "SCALE",
+					size = { 0.62, 0.1, },
+					transf = { 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, -9.24, -1.498, 1.56, 1, },
+					type = "LINE_NAME",
+				},
+                {
+					alignment = "CENTER",
+					childId = "RootNode",
+					color = { 0, 0, 0, 1, },
+					fitting = "SCALE",
+					size = { 0.62, 0.1, },
+					transf = { 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, -9.24, -1.499, 1.39, 1, },
+					type = "NEXT_STOP",
+				},
+			},
+		},
+        availability = {
+			yearFrom = 1946,
+			yearTo = 1956,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			name = _("ES31_2_name"),
+            description = _("ES31_desc"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCosts = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = { "vehicle/train/ET31/rad_lod0.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 19, 20, },
+					frontBackwardParts = { 18, },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/ET31/rad_lod1.msh", },
+					backBackwardParts = { },
+					backForwardParts = { 19, 20, },
+					frontBackwardParts = { 18, },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/ET31/rad_lod2.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+			},
+			engines = {
+
+			},
+			soundSet = {
+				horn = "vehicle/truck_modern/horn.wav",
+				name = "waggon_modern",
+			},
+			topSpeed = 33.3333333333,
+			weight = 31,
+		},
+		seatProvider = {
+			drivingLicense = "RAIL",
+			seats = {
+                {
+                    animation = "idle",
+                    crew = true,
+                    forward = false,
+                    standing = true,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -10.0, 0.8, 1.23, 1, },
+                },
+				----
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9, 1.1, 1.2, 1, },
+                },
+				{
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9, 0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.3, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.3, 0.65, 1.2, 1, },
+                },
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9, -1.1, 1.2, 1, },
+                },
+				{
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 9, -0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.3, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8.3, -0.65, 1.2, 1, },
+                },				
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 7.2, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 7.2, 0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.3, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.3, 0.65, 1.2, 1, },
+                },				
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 7.2, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 7.2, -0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.3, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6.3, -0.65, 1.2, 1, },
+                },				
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.2, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.2, 0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.3, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.3, 0.65, 1.2, 1, },
+                },				
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.2, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 5.2, -0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.3, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.3, -0.65, 1.2, 1, },
+                },
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0.5, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0.5, 0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.4, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.4, 0.65, 1.2, 1, },
+                },
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0.5, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0.5, -0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.4, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.4, -0.65, 1.2, 1, },
+                },
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.1, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.1, 0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.95, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.95, 0.65, 1.2, 1, },
+                },
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.1, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -1.1, -0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.95, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.95, -0.65, 1.2, 1, },
+                },
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -2.7, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -2.7, 0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.2, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.2, 0.65, 1.2, 1, },
+                },
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -2.7, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -2.7, -0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.2, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.2, -0.65, 1.2, 1, },
+                },
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -5.45, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -5.45, 0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.15, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.15, 0.65, 1.2, 1, },
+                },
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -5.45, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -5.45, -0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.15, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -6.15, -0.65, 1.2, 1, },
+                },
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -6.9, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -6.9, 0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.7, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.7, 0.65, 1.2, 1, },
+                },
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -6.9, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -6.9, -0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.7, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.7, -0.65, 1.2, 1, },
+                },
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, -0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.5, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.5, 0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, -0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.3, 1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.3, 0.65, 1.2, 1, },
+                },
+				---
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0.174, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.5, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -8.5, -0.65, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0.174, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.3, -1.1, 1.2, 1, },
+                },
+                {
+                    animation = "sitting",
+                    crew = false,
+                    group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -9.3, -0.65, 1.2, 1, },
+                },
+			},
+		},
+		transportVehicle = {
+			carrier = "RAIL",
+			compartments = {
+				{
+					{
+						{
+							capacity = 72,
+							type = "PASSENGERS",
+						},
+					},
+				},
+			},
+			loadSpeed = 2,
+			multipleUnitOnly = true,
+			reversible = true,
+		},
+	},
+	version = 1,
+}
+end
