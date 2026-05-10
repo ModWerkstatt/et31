@@ -1,0 +1,12 @@
+﻿function data()
+return {
+	vehicles = {
+		{ name = "et31a_2.mdl", forward = true },
+		{ name = "em31_2.mdl", forward = true },
+		{ name = "et31b_2.mdl", forward = false },
+	},
+	name = _("ET31_2_name"),
+	desc = _("ET31_2_desc"),
+    groupFileName = "menu_et31.mdl",
+}
+end
