@@ -986,7 +986,7 @@ return {
 				weightMaxPayload = 0,
 			},
          extent = {
-			   bbMax = { 12.16139984130859375, 1.526886463165283203125, 3.958963871002197265625, },
+			   bbMax = { 12.16139984130859375, 1.526886463165283203125, .958963871002197265625, },
 				bbMin = { -11.7698001861572265625, -1.5268895626068115234375, -0.0581529140472412109375, },
 		   },
 			lightSourceList = {
@@ -1453,7 +1453,7 @@ return {
 				},
 			},
 			transformatorConfig = { 
-				skipFromLod = 1,
+				skipFromLod = 2,
 				transformator = { 
 					name = "::/vehicle/train/shared/default_train.trf",
 				},
