@@ -1,8 +1,8 @@
 function data()
 return { 
 		boundingInfo = { 
-			bbMax = { 11.19600009918212890625, 1.526886463165283203125, 5.89901447296142578125, },
-			bbMin = { -11.19600009918212890625, -1.5268895626068115234375, -0.0581529140472412109375, },
+			bbMax = { 15.5, 4, 7.75, },
+			bbMin = { -15.5, -4, -0.25, },
 		},
 		collider = { 
 			params = { 
@@ -667,6 +667,34 @@ return {
 				topSpeed = 33.333332061767578125,
 				weightEmpty = 28000,
 				weightMaxPayload = 0,
+			},
+         extent = {
+			   bbMax = { 11.19600009918212890625, 1.526886463165283203125, 5.89901447296142578125, },
+				bbMin = { -11.19600009918212890625, -1.5268895626068115234375, -0.0581529140472412109375, },
+		   },
+			lightSourceList = {
+				lights = {
+					{
+						angleMax = 89,
+						angleMin = 9,
+						color = { 1, 0.9261314868927001953125, 0.5803921222686767578125, },
+						fadeOutStart = 600,
+						fromTime = -1,
+						invertMask = false,
+						length = 11.5,
+						lightId = "",
+						mask = 32,
+						meshId = "interior",
+						mode = "LIGHT",
+						radius = 4,
+						strength = 3,
+						toTime = -1,
+						transf = { 1, 0, 0, 0, 0, 0, -1, 0, 0, 1, 0, 0, 0, 0, 3.75, 1, },
+						type = "CYLINDRICAL",
+						visibleFrom = -1,
+						visibleTo = 800,
+					},
+				},
 			},
 			maintenance = { 
 				lifespan = 21915,
