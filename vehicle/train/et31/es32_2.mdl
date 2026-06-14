@@ -378,13 +378,13 @@ return {
 								{ 
 									materials = { "mat/et31/shared/beweglich.mtl", },
 									mesh = "msh/et31/shared/rad_lod1.msh",
-									name = "rad",
+									name = "a1",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5, 0, 0.484559834003448486328125, 1, },
 								},
 								{ 
 									materials = { "mat/et31/shared/beweglich.mtl", },
 									mesh = "msh/et31/shared/rad_lod1.msh",
-									name = "rad",
+									name = "a2",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5, 0, 0.484559834003448486328125, 1, },
 								},
 							},
@@ -402,13 +402,13 @@ return {
 								{ 
 									materials = { "mat/et31/shared/beweglich.mtl", },
 									mesh = "msh/et31/shared/rad_lod1.msh",
-									name = "rad",
+									name = "a3",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.5, 0, 0.484559834003448486328125, 1, },
 								},
 								{ 
 									materials = { "mat/et31/shared/beweglich.mtl", },
 									mesh = "msh/et31/shared/rad_lod1.msh",
-									name = "rad",
+									name = "a4",
 									transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.5, 0, 0.484559834003448486328125, 1, },
 								},
 							},
