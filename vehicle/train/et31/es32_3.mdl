@@ -1484,7 +1484,7 @@ return {
 				loadSpeed = 2,
 				multipleUnitOnly = true,
 				reversible = true,
-				tags = { "TRAIN", "ELECTRIC_TRAIN", },
+				transportModes = { "TRAIN", "ELECTRIC_TRAIN" },  
 			},
 		},
 		version = 2,
