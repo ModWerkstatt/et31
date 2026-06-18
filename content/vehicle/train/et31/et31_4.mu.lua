@@ -8,5 +8,6 @@ return {
 	name = _("ET31_4_name"),
 	desc = _("ET31_4_desc"),
    groupFileName = "menu_et31.mdl",
+    filterTags = { "default" },
 }
 end
