@@ -1416,7 +1416,7 @@ return {
 				departureDelay = 2083,
 				engineTransportModes = { "TRAIN", "ELECTRIC_TRAIN", },			
 				loadSpeed = 2,
-				filterTags =  { }
+				filterTags = { },
 				reversible = true,
 				transportModes = { "TRAIN", "ELECTRIC_TRAIN" },  
 			},
