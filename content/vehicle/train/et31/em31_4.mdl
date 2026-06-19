@@ -1077,7 +1077,7 @@ return {
 					},
 				},
 				departureDelay = 2083,
-				engineTags = { },
+				engineTransportModes = { },
 				loadSpeed = 4,
 				filterTags = { },
 				reversible = true,
