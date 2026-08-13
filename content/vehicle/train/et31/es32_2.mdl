@@ -1486,6 +1486,7 @@ return {
 				loadSpeed = 2,
 				filterTags =  { "default" },
 				reversible = true,
+				groupFileName = "menu_et31.mdl",
 				transportModes = { "TRAIN", "ELECTRIC_TRAIN" },  
 			},
 		},
