@@ -661,12 +661,12 @@ return {
 				},
 			},
 			landVehicle = { 
-				brakeDeceleration = 2.5,
+				brakeDeceleration = 0.7,
 				engines = { },
 				friction = 0.0199999995529651641845703125,
 				topSpeed = 33.333332061767578125,
 				weightEmpty = 28000,
-				weightMaxPayload = 0,
+				weightMaxPayload = 6000,
 			},
          extent = {
 			   bbMax = { 11.19600009918212890625, 1.526886463165283203125, 5.89901447296142578125, },
@@ -1078,6 +1078,28 @@ return {
 				},
 				departureDelay = 2083,
 				engineTransportModes = { },
+				entrances = {
+					{ 
+						path = {
+							{ -10.3, -3, 0.1, },
+							{ -10.3, -1.85, 0.1, },
+							{ -10.3, -1.6, 0.7, },
+							{ -10.3, -0.95, 1.25, },
+							{ -10.3, 0, 1.25, },
+							{ -10.3, 0.3, 1.25, },
+						},
+					},
+					{ 
+						path = {
+							{ -10.3, 3, 0.1, },
+							{ -10.3, 1.85, 0.1, },
+							{ -10.3, 1.6, 0.7, },
+							{ -10.3, 0.95, 1.25, },
+							{ -10.3, 0, 1.25, },
+							{ -10.3, -0.3, 1.25, },
+						},
+					},
+				},
 				loadSpeed = 4,
 				filterTags = { },
 				reversible = true,
